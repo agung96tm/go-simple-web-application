@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "./;proto";
+
+import "google/protobuf/empty.proto";
+
+service UserService {
+  rpc List(UserListRequest) returns (UserListResponse) {}
+  rpc Detail(UserDetailRequest) returns (UserDetailResponse) {}
+  rpc Create(UserCreateRequest) returns (UserDetailResponse) {}
+  rpc Update(UserUpdateRequest) returns (UserDetailResponse) {}
+  rpc Delete(UserDeleteRequest) returns (google.protobuf.Empty) {}
+}
+
+message User {
+  string Id = 1;
+  string Name = 2;
+}
+
+message UserList {
+  repeated User users = 1;
+}
+
+// dto
+message UserListRequest {
+}
+
+message UserListResponse {
+  repeated User data = 1;
+}
+
+message UserDetailRequest {
+  string id = 1;
+}
+
+message UserDetailResponse {
+  User user = 1;
+}
+
+message UserCreateRequest {
+  User user = 1;
+}
+
+message UserUpdateRequest {
+  User user = 1;
+}
+
+message UserDeleteRequest {
+  string id = 1;
+}

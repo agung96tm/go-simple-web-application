@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    container_name: "simple-db"
+    image: postgres:16.2-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - simple-db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=simple_user
+      - POSTGRES_PASSWORD=simple_pass
+      - POSTGRES_DB=simple_db
+
+volumes:
+  simple-db-data: {}
