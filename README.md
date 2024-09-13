@@ -18,6 +18,11 @@ docker-compose up -d --build
 cp .envrc.example .envrc
 ```
 
+### Build Proto
+```shell
+make proto_build
+```
+
 ### Run Migrate
 ```shell
 make migration/up
