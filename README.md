@@ -4,6 +4,8 @@ A Simple Web Application Example for Handling gRPC and RestAPI.
 
 ## Grpc - Example
 
+[Postman - Grpc Collections](https://speeding-comet-3687.postman.co/workspace/go-simple-web-application~065c4dbd-4d8b-4802-ad49-92204f55f90b/collection/66e41c18164c0b4d4fad3da7?action=share&creator=2399435)
+
 ### Install migration & Run database
 ```shell
 # migration
@@ -36,6 +38,8 @@ make run/rpc
 ---
 
 ## RestAPI - Example
+
+[Postman - RestAPI Collections](https://speeding-comet-3687.postman.co/workspace/go-simple-web-application~065c4dbd-4d8b-4802-ad49-92204f55f90b/collection/2399435-f78615be-c851-41a4-a03f-81ae6933472e?action=share&creator=2399435)
 
 ### Install migration & Run database
 ```shell

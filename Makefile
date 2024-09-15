@@ -11,7 +11,7 @@ run/rpc:
 
 .PHONY: run/rest
 run/rest:
-	go run ./cmd/rest
+	go run ./cmd/rest -db-dsn=${DB_DSN}
 
 
 .PHONY: migration/new
