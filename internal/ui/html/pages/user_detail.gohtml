@@ -1,0 +1,17 @@
+{{define "title"}}User #{{.User.ID}}{{end}}
+
+{{define "main"}}
+    {{with .User}}
+        <h2>User #{{.ID}}</h2>
+        <form action="/users/update?id={{.ID}}" method="post">
+            <div>
+                <label for="name">Name: </label>
+                <input id="name" name="name" type="text" value="{{.Name }}">
+            </div>
+
+            <div>
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    {{end}}
+{{end}}
