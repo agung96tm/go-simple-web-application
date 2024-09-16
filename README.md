@@ -1,6 +1,6 @@
 Go Simple Web Application
 ===========================================
-A Simple Web Application Example for Handling gRPC and RestAPI.
+A Simple Web Application Example for Handling Modern API Technologies.
 
 
 ## How To Run
