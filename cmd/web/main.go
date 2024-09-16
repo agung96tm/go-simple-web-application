@@ -34,7 +34,7 @@ func main() {
 	flag.StringVar(&config.DB.DSN, "db-dsn", "", "Database DSN")
 	flag.Parse()
 
-	logger := log.New(os.Stdout, "", log.LstdFlags|log.Lmicroseconds|log.Lshortfile)
+	logger := log.New(os.Stdout, "web: ", log.LstdFlags|log.Lmicroseconds|log.Lshortfile)
 
 	templateCache, err := newTemplateCache()
 	if err != nil {

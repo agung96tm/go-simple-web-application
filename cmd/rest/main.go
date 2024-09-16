@@ -32,7 +32,7 @@ func main() {
 	flag.StringVar(&config.DB.DSN, "db-dsn", "", "Database DSN")
 	flag.Parse()
 
-	logger := log.New(os.Stdout, "rpc: ", log.LstdFlags|log.Lmicroseconds|log.Lshortfile)
+	logger := log.New(os.Stdout, "restapi: ", log.LstdFlags|log.Lmicroseconds|log.Lshortfile)
 
 	db, err := openDB(config)
 	if err != nil {
