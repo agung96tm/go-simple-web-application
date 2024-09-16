@@ -23,6 +23,10 @@ run/rest:
 run/web:
 	go run ./cmd/web -db-dsn=${DB_DSN}
 
+.PHONY: run/graphql
+run/graphql:
+	go run ./cmd/graphql -db-dsn=${DB_DSN}
+
 
 # ----------------------------------------------------------------------------------------
 # Migration
