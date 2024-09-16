@@ -41,6 +41,7 @@ func main() {
 	if err != nil {
 		logger.Fatal(err)
 	}
+	defer db.Close()
 
 	app := Application{
 		Config: config,
