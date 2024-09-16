@@ -105,8 +105,40 @@ A Simple Web Application Example for Handling gRPC and RestAPI.
 
 </details>
 
+<details>
+  <summary>GraphQL</summary>
+
+### GraphQL
+
+[Postman - GraphQL Collections](https://speeding-comet-3687.postman.co/workspace/go-simple-web-application~065c4dbd-4d8b-4802-ad49-92204f55f90b/collection/66e862a687e11a120bf6615d?action=share&creator=2399435)
+
+#### Install migration & Run database
+  ```shell
+  # migration
+  $ curl -L https://github.com/golang-migrate/migrate/releases/download/$version/migrate.$os-$arch.tar.gz | tar xvz
+    
+  # database
+  docker-compose up -d --build
+  ```
+
+#### Copy Env
+  ```shell
+  cp .envrc.example .envrc
+  ```
+
+#### Run Migrate
+  ```shell
+  make migration/up
+  ```
+
+#### Run Application
+  ```shell
+  make run/graphql
+  ```
+
+</details>
+
 ## Contributors
 * Agung Yuliyanto
-    * [Github](https://github.com/agung96tm)
-    * [LinkedIn](https://www.linkedin.com/in/agung96tm/)
-
+  * [Github](https://github.com/agung96tm)
+  * [LinkedIn](https://www.linkedin.com/in/agung96tm/)
